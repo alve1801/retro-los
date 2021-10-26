@@ -11,7 +11,7 @@ for(int r=0;r<viewrad*2.5*M_PI+1;r++){
 
 	for(int i=0;i<viewrad;i++){
 		if(i*i*(dx*dx+dy*dy)>viewrad*viewrad)break;
-		int x=i*dx+mx/2+.5,y=i*dy+my/2+.5;
+		int x=i*dx+sx/2+.5,y=i*dy+sy/2+.5;
 		Draw(x,y);
 		if(Solid(x,y))break;
 	}
